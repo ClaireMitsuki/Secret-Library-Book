@@ -1,30 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Secret Library Book</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fdf6e3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #2c3e50;
+      margin: 0;
+      padding: 40px 20px;
       text-align: center;
-      padding: 40px;
     }
-    h1 { color: #2c3e50; }
-    a.download {
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .download-btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #2980b9;
-      color: white;
+      padding: 12px 24px;
+      background-color: #0077cc;
+      color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #005fa3;
+    }
+
+    img.cover {
+      max-width: 200px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>📚 Secret Library Book</h1>
-  <p>A mysterious tale hidden deep within ancient archives...</p>
-  <a class="download" href="SecretLibraryBook.pdf" download>📥 Download PDF</a>
+  <div class="container">
+    <h1>📚 Secret Library Book</h1>
+    
+    <!-- Optional cover image -->
+    <!-- <img src="cover.jpg" alt="Book Cover" class="cover" /> -->
+
+    <p class="description">
+      A hidden tale of mystery and adventure buried within ancient archives. <br />
+      Download your copy of <strong>Secret Library Book</strong> and begin your journey now.
+    </p>
+
+    <a class="download-btn" href="SecretLibraryBook.pdf" download>
+      📥 Download the eBook (PDF)
+    </a>
+
+    <footer>
+      <p>&copy; 2025 Secret Library Publishing</p>
+    </footer>
+  </div>
 </body>
 </html>
